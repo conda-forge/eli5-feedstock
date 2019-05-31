@@ -1,6 +1,5 @@
 {% set name = "eli5" %}
 {% set version = "0.8.2" %}
-{% set sha256hash = "b1b70d47eb91e2099df60fc8208305467936c039ef52b03438da1bc440c8e72a" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256hash }}
+  sha256: c6639de8b9cbbdff246a16981331b53d9ff39f4a18a6f6394a2b94504c272f0c
 
 build:
   number: 0
