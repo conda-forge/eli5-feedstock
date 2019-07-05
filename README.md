@@ -17,9 +17,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5878&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/eli5-feedstock?branchName=master">
@@ -121,4 +119,5 @@ Feedstock Maintainers
 =====================
 
 * [@rmax](https://github.com/rmax/)
+* [@xhochy](https://github.com/xhochy/)
 
