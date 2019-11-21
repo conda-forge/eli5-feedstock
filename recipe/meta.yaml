@@ -11,8 +11,8 @@ source:
   sha256: 62f4b5d6a55ff3299e830144112144eafbd275f86eb7cd560c1a229cd2be2a2b
 
 build:
-  number: 0
-  noarch: python
+  # Cannot use `noarch: python` as this uses typing
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - singledispatch >=3.4.0.3
     - six
     - scikit-learn >=0.18
-    - typing
+    - typing  # [py<36]
     - python-graphviz
     - tabulate >=0.7.7
 
