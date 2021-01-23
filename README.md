@@ -5,9 +5,13 @@ Home: https://eli5.readthedocs.io/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eli5-feedstock/blob/master/LICENSE.txt)
 
 Summary: Debug machine learning classifiers and explain their predictions
+
+Development: https://github.com/TeamHG-Memex/eli5/
+
+Documentation: https://eli5.readthedocs.io/en/latest/
 
 ELI5 is a Python package which helps to debug machine learning classifiers
 and explain their predictions.
