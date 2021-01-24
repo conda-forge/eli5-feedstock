@@ -32,6 +32,10 @@ requirements:
     - tabulate >=0.7.7
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - eli5
 
