@@ -7,20 +7,20 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ec8459eaaf09d66743c53a7bdb115c6cda7e533d7a5d02a5a8bb717ee843eb37
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - attrs >17.1.0
     - jinja2 >=3.0.0
     - numpy >=1.9.0
@@ -34,6 +34,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
