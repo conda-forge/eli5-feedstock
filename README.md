@@ -16,7 +16,6 @@ Documentation: https://eli5.readthedocs.io/en/latest/
 ELI5 is a Python package which helps to debug machine learning classifiers
 and explain their predictions.
 
-
 Current build status
 ====================
 
