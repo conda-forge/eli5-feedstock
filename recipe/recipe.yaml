@@ -1,26 +1,29 @@
-{% set name = "eli5" %}
-{% set version = "0.16.0" %}
+schema_version: 1
+
+context:
+  name: eli5
+  version: 0.16.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 6d8ab55b3535f8feecf4f98dbaadd6876121e5a2549735635cf71707d34bd47c
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}
     - setuptools
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - attrs >17.1.0
     - jinja2 >=3.0.0
     - numpy >=1.9.0
@@ -29,24 +32,26 @@ requirements:
     - python-graphviz
     - tabulate >=0.7.7
 
-test:
-  requires:
-    - pip
-  commands:
-    - pip check
-  imports:
-    - eli5
+tests:
+  - python:
+      imports:
+        - eli5
+  - requirements:
+      run:
+        - pip
+    script:
+      - pip check
 
 about:
-  home: https://eli5.readthedocs.io/
   license: MIT
   license_file: LICENSE.txt
   summary: Debug machine learning classifiers and explain their predictions
   description: |
     ELI5 is a Python package which helps to debug machine learning classifiers
     and explain their predictions.
-  doc_url: https://eli5.readthedocs.io/en/latest/
-  dev_url: https://github.com/eli5-org/eli5/
+  homepage: https://eli5.readthedocs.io/
+  repository: https://github.com/eli5-org/eli5/
+  documentation: https://eli5.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
