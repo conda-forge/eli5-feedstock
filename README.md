@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Debug machine learning classifiers and explain their predictions
 
-Development: https://github.com/TeamHG-Memex/eli5/
+Development: https://github.com/eli5-org/eli5/
 
 Documentation: https://eli5.readthedocs.io/en/latest/
 
