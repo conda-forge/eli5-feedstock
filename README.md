@@ -1,21 +1,20 @@
-About eli5
-==========
+About eli5-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eli5-feedstock/blob/main/LICENSE.txt)
 
 Home: https://eli5.readthedocs.io/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eli5-feedstock/blob/main/LICENSE.txt)
-
 Summary: Debug machine learning classifiers and explain their predictions
 
-Development: https://github.com/TeamHG-Memex/eli5/
+Development: https://github.com/eli5-org/eli5/
 
 Documentation: https://eli5.readthedocs.io/en/latest/
 
 ELI5 is a Python package which helps to debug machine learning classifiers
 and explain their predictions.
-
 
 Current build status
 ====================
@@ -103,7 +102,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
