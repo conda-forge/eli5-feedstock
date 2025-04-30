@@ -36,9 +36,11 @@ tests:
   - python:
       imports:
         - eli5
+    python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
+        - python ${{ python_min }}.*
     script:
       - pip check
 
